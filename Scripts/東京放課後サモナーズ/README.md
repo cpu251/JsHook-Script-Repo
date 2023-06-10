@@ -25,14 +25,14 @@ frida
 
 ## 模拟器相关
 * 拿`雷电9`举例，其他模拟器自己尝试
-1. 先装好游戏能进入了，建议直接把手机的`sdcard/Android/data/jp.co.lifewonders.housamo`整个打包，模拟器解压成一样路径，AuthKey也在里面了，检查obb文件，谷歌三件套有没有安装
+1. 先装好游戏能进入了，建议直接把手机的`sdcard/Android/data/jp.co.lifewonders.housamo`整个打包，模拟器解压成一样路径，`AuthKey`也在里面了，检查obb文件，谷歌三件套有没有安装
 2. 模拟器开好`ROOT`，设置`System.vmdk 可写入`
 3. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)
 4. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Magisk Delta`设置打开`Zygisk`
 5. 安装`JsHook` [下载地址](https://jshook.org/)
 6. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器
 7. `JsHook` -> 仓库 -> 下载脚本
-8. `JsHook` -> 应用 -> 龍脈R -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
+8. `JsHook` -> 应用 -> `housamo` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
 9. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
 
 ## 免root相关（实机）
