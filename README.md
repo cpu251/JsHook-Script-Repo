@@ -1,8 +1,12 @@
 # JsHook-Script-Repo
 我的JsHook脚本仓库KUMA
 
-# 自建仓库：
-#自建仓库
+# 仓库说明
+* 现有龙脉、东放、lah的mod
+* 安装[JsHook](https://jshook.org/)后，在`仓库`右上角三点的`订阅管理`里的右上角三点`新增订阅`添加好仓库地址
+* mod的说明和使用方法在各自详情，或Scripts里各目录内的README.md查看
+
+# 仓库地址
 
 建议使用github仓库，CDN仓库刷新存在延迟(24小时刷新CD)...KUMA
 
