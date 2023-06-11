@@ -35,12 +35,12 @@ frida
 8. `JsHook` -> 应用 -> `housamo` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
 9. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
 
-## 免root相关（实机）
+## 免root相关（实机最高安卓12）
 ### 黑盒方法：
 #### 首次执行：
 1. 安装`JsHook` [下载地址](https://jshook.org/)
 2. 安装黑盒，一般来说安装`BlackBox64` [下载地址](https://github.com/FBlackBox/BlackBox/releases)
-3. 打开`BlackBox64` -> 右上角三点 -> 软件设置 -> **开启进程守护（防止闪退）** -> 启动Xposed框架 -> 模块管理 -> 勾选`JsHook` -> 关闭`BlackBox64`
+3. 打开`BlackBox64` -> 右上角三点 -> 软件设置 -> **开启进程守护（防止闪退）** -> 启动Xposed框架 -> 模块管理 -> 点+ -> 选择`JsHook` -> 勾选`JsHook` -> 关闭`BlackBox64`
 4. 如果`BlackBox64`的**软件设置**的**GMS管理**能开启，则开启，然后可以跳过5、6步，直接从第7步开始
 5. 下载以下3个APK（谷歌三件套），注意查看下载路径
 * [Api 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/api28)
