@@ -42,7 +42,7 @@ function main() {
             // console.log(filepatn);
             let mtime = fs.statSync(filepatn + scriptType + ".js").mtime.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
             // console.log(mtime);
-            let branch = "master"; // master、main 分支名称
+            let branch = "main"; // master、main 分支名称
             let store = {
                 "author": author,
                 "markdown": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/" + branch + "/Scripts/" + encodeURI(pathName) + "/README.md",

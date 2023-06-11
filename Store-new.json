@@ -1,9 +1,9 @@
 {
   "name": "KUMA的仓库",
   "icon": null,
-  "list": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/master/Store.json",
-  "push": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/master/msg/msg.json",
-  "markdown": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/master/README.md",
+  "list": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/main/Store.json",
+  "push": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/main/msg/msg.json",
+  "markdown": "https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/main/README.md",
   "group_qq": null,
   "group_tg": "jshookgroup",
   "user_count": 1069
