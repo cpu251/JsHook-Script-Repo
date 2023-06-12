@@ -89,7 +89,7 @@ sdcard/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
 ```
 复制到
 ```
-sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
+sdcard/Android/media/io.virtualapp.sandvxposed64/scopedStorage/jp.co.lifewonders.liveahero/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
 ```
 10. 上一步也可以直接把
 ```
@@ -97,7 +97,7 @@ sdcard/Android/data/jp.co.lifewonders.liveahero
 ```
 整个文件夹复制到
 ```
-sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero
+sdcard/Android/media/io.virtualapp.sandvxposed64/scopedStorage/jp.co.lifewonders.liveahero/Android/data/jp.co.lifewonders.liveahero
 ```
 11. 打开`伏羲X 64` -> 打开`JsHook` -> 框架管理 -> 安装`FridaMod`
 12. `JsHook`回首页 -> 仓库 -> 下载脚本
