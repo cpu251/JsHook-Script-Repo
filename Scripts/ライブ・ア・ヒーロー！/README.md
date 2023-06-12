@@ -35,15 +35,20 @@ frida
 8. `JsHook` -> 应用 -> `LiveAHero` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
 9. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
 
-## 免root相关（实机最高安卓12）
-### 黑盒方法：
+## 免root相关（实机）
+### 黑盒方法（最高安卓12）：
 #### 首次执行：
-1. 安装`JsHook` [下载地址](https://jshook.org/)
-2. 安装黑盒，一般来说安装`BlackBox64` [下载地址](https://github.com/FBlackBox/BlackBox/releases)
+1. 手机安装`JsHook` [下载地址](https://jshook.org/)
+2. 手机安装`BlackBox64` [下载地址](https://github.com/FBlackBox/BlackBox/releases)
 3. 打开`BlackBox64` -> 右上角三点 -> 软件设置 -> **开启进程守护（防止闪退）** -> 启动Xposed框架 -> 模块管理 -> 点+ -> 选择`JsHook` -> 勾选`JsHook` -> 关闭`BlackBox64`
-4. 如果`BlackBox64`的软件设置的`GMS管理`能开启，则开启
-5. 打开`BlackBox64` -> 点+ -> LiveAHero -> 进入游戏提示下载后关闭
-6. 外部使用文件管理应用，如`MT管理器`，把
+4. 如果`BlackBox64`的**软件设置**的**GMS管理**能开启，则开启，然后可以跳过5、6步，直接从第7步开始
+5. 下载以下3个APK（谷歌三件套），注意查看下载路径
+* [Api 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/api28)
+* [Google Play services 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/s212417037)
+* [Google Play Store 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/st82601710)
+6. 打开`BlackBox64` -> 点+ -> 手动选择 -> 按顺序选择安装完以上3个APK
+7. 打开`BlackBox64` -> 点+ -> LiveAHero -> 进入游戏提示下载后关闭
+8. 外部使用文件管理应用，如`MT管理器`，把
 ```
 sdcard/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
 ```
@@ -51,7 +56,7 @@ sdcard/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
 ```
 sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
 ```
-7. 上一步也可以直接把
+9. 上一步也可以直接把
 ```
 sdcard/Android/data/jp.co.lifewonders.liveahero
 ```
@@ -59,16 +64,47 @@ sdcard/Android/data/jp.co.lifewonders.liveahero
 ```
 sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero
 ```
-8. 打开`BlackBox64` -> 打开`JsHook` -> 框架管理 -> 安装FridaMod
-9. `JsHook`回首页 -> 仓库 -> 下载脚本
-10. `JsHook`回首页 -> 应用 -> LiveAHero -> 启动Hook服务 -> 启动配置（脚本配置） -> 延时设置1000 -> 选择注入框架`FridaMod` -> 启动下载的脚本
-11. 重启`BlackBox64` -> 运行游戏
-12. `GMS管理`无法开启会弹出`不支持Google Play服务`提示，可以无视，实在不想看到可以`BlackBox64`手动选择安装以下3个APK解决（谷歌三件套）
+10. 打开`BlackBox64` -> 打开`JsHook` -> 框架管理 -> 安装FridaMod
+11. `JsHook`回首页 -> 仓库 -> 下载脚本
+12. `JsHook`回首页 -> 应用 -> LiveAHero -> 启动Hook服务 -> 启动配置（脚本配置） -> 延时设置1000 -> 选择注入框架`FridaMod` -> 启动下载的脚本
+13. 重启`BlackBox64` -> 运行游戏
+#### 游戏更新后：
+* 外部更新游戏就行了，黑盒内部直接链接外部的应用的
+
+### 伏羲X方法（现最高安卓14）：
+1. 手机安装`JsHook`并保留APK [下载地址](https://jshook.org/)
+2. 手机安装`伏羲X 64` -> 酷安自行搜索下载 或 [此处下载svxp64](https://github.com/Katana-Official/SPatch-Update/releases)
+3. 打开`伏羲X 64` -> 右下角三点 -> 从文件管理器安装 -> 选择`JsHook`的APK安装
+4. 打开`伏羲X 64` -> 右下角三点 -> 应用设置 -> 允许谷歌套件
+5. 打开`伏羲X 64` -> 右下角三点 -> 克隆App -> 右上角三点 -> 显示系统应用 -> 选择`Google Play 商店`、`Google Play 服务`、`Google 服务框架`三个安装，如没有这3个进行6、7步，有而且能安装则从第8步开始
+6. 下载以下3个APK（谷歌三件套），注意查看下载路径
 * [Api 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/api28)
 * [Google Play services 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/s212417037)
 * [Google Play Store 下载地址](https://github.com/xkeyC/x_google_installer/releases/tag/st82601710)
+7. 打开`伏羲X 64` -> 右下角三点 -> 从文件管理器安装 -> 按顺序选择安装完以上3个APK
+8. 打开`伏羲X 64` -> 右下角三点 -> 克隆App -> LiveAHero -> 进入游戏提示下载后关闭
+9. 外部使用文件管理应用，如`MT管理器`，把
+```
+sdcard/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
+```
+复制到
+```
+sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero/files/datas/userkey
+```
+10. 上一步也可以直接把
+```
+sdcard/Android/data/jp.co.lifewonders.liveahero
+```
+整个文件夹复制到
+```
+sdcard/Android/data/top.niunaijun.blackboxa64/files/blackbox/storage/emulated/0/Android/data/jp.co.lifewonders.liveahero
+```
+11. 打开`伏羲X 64` -> 打开`JsHook` -> 框架管理 -> 安装`FridaMod`
+12. `JsHook`回首页 -> 仓库 -> 下载脚本
+13. `JsHook`回首页 -> 应用 -> LiveAHero -> 启动Hook服务 -> 启动配置（脚本配置） -> 延时设置1000 -> 选择注入框架`FridaMod` -> 启动下载的脚本
+14. 重启`伏羲X 64` -> 运行游戏
 #### 游戏更新后：
-* 外部更新游戏就行了，黑盒内部直接链接外部的应用的
+* 外部更新游戏就行了，伏羲X内部直接链接外部的应用的
 
 ## root相关（实机）
 1. 安装`JsHook` [下载地址](https://jshook.org/)

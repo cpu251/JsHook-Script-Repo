@@ -49,11 +49,11 @@ frida
 7. `JsHook` -> 应用 -> `龍脈R` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
 8. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
 
-## 免root相关（实机最高安卓12）
-### 黑盒方法：
+## 免root相关（实机）
+### 黑盒方法（最高安卓12）：
 #### 首次执行：
-1. 安装`JsHook` [下载地址](https://jshook.org/)
-2. 安装黑盒，一般来说安装`BlackBox64` [下载地址](https://github.com/FBlackBox/BlackBox/releases)
+1. 手机安装`JsHook` [下载地址](https://jshook.org/)
+2. 手机安装`BlackBox64` [下载地址](https://github.com/FBlackBox/BlackBox/releases)
 3. 打开`BlackBox64` -> 右上角三点 -> 软件设置 -> **开启进程守护（防止闪退）** -> 启动Xposed框架 -> 模块管理 -> 点+ -> 选择`JsHook` -> 勾选`JsHook` -> 关闭`BlackBox64`
 4. 打开`BlackBox64` -> 点+ -> 龍脈R 和 “兔子头” -> “兔子头”登录，点击OPEN -> 进入游戏主界面后关闭
 5. 打开`BlackBox64` -> 打开`JsHook` -> 框架管理 -> 安装`FridaMod`
@@ -62,7 +62,19 @@ frida
 8. 重启`BlackBox64` -> 运行游戏
 #### 游戏更新后：
 * 外部更新游戏就行了，黑盒内部直接链接外部的应用的
-* 
+
+### 伏羲X方法（现最高安卓14）：
+#### 首次执行：
+1. 手机安装`JsHook`并保留APK [下载地址](https://jshook.org/)
+2. 手机安装`伏羲X 64` -> 酷安自行搜索下载 或 [此处下载svxp64](https://github.com/Katana-Official/SPatch-Update/releases)
+3. 打开`伏羲X 64` -> 右下角三点 -> 从文件管理器安装 -> 选择`JsHook`的APK安装
+4. 打开`伏羲X 64` -> 右下角三点 -> 克隆App -> 龍脈R 和 “兔子头” -> “兔子头”登录，点击OPEN -> 进入游戏主界面后关闭
+5. 打开`伏羲X 64` -> 打开`JsHook` -> 框架管理 -> 安装`FridaMod`
+6. `JsHook`回首页 -> 仓库 -> 下载脚本
+7. `JsHook`回首页 -> 应用 -> 龍脈R -> 启动Hook服务 -> 启动配置（脚本配置） -> 延时设置100 -> 选择注入框架`FridaMod` -> 启动下载的脚本
+8. 重启`伏羲X 64` -> 运行游戏
+#### 游戏更新后：
+* 外部更新游戏就行了，伏羲X内部直接链接外部的应用的
 
 ## root相关（实机）
 1. 安装`JsHook` [下载地址](https://jshook.org/)
