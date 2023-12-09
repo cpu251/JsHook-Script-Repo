@@ -23,31 +23,34 @@ frida
 * 战斗开场不动直接胜利，在主界面点击`签到奖励查看`按钮开关
 * 进了战斗想开可以连点4下`暂停`按钮
 
+## PC版相关
+[PC版Mod地址](../%E9%BE%8D%E8%84%88%E2%80%A2%E5%8F%A6%E4%B8%80%E7%A8%AE%E5%A7%BF%E6%85%8BR%20PC%E7%89%88)
+
 ## 模拟器相关
 ### 拿`蓝叠5 安卓11版`举例
-1. 先装好游戏能进入了
-2. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)
-3. 按照说明安装Magisk [下载地址](https://huskydg.github.io/magisk-files/docs/faq.html)
-* `Step to step to install Magisk into Bluestacks`
-* `Before start`
-4. 具体是先关闭蓝叠，用`Bluestacks Tweaker`先`Unlock`，等完成，再启动蓝叠，点击`Patch`
-5. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Bluestacks Tweaker`点击`UnPatch`
-6. `Magisk Delta`设置打开`Zygisk`
-7. 安装`JsHook` [下载地址](https://jshook.org/)
-8. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器
-9. `JsHook` -> 仓库 -> 下载脚本
-10. `JsHook` -> 应用 -> `龍脈R` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
-11. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
+~~1. 先装好游戏能进入了~~
+~~2. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)~~
+~~3. 按照说明安装Magisk [下载地址](https://huskydg.github.io/magisk-files/docs/faq.html)~~
+~~* `Step to step to install Magisk into Bluestacks`~~
+~~* `Before start`~~
+~~4. 具体是先关闭蓝叠，用`Bluestacks Tweaker`先`Unlock`，等完成，再启动蓝叠，点击`Patch`~~
+~~5. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Bluestacks Tweaker`点击`UnPatch`~~
+~~6. `Magisk Delta`设置打开`Zygisk`~~
+~~7. 安装`JsHook` [下载地址](https://jshook.org/)~~
+~~8. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器~~
+~~9. `JsHook` -> 仓库 -> 下载脚本~~
+~~10. `JsHook` -> 应用 -> `龍脈R` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本~~
+~~11. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本~~
 
 ### 拿`雷电9`举例，其他模拟器自己尝试
-1. 先装好游戏能进入了，模拟器开好`ROOT`，设置`System.vmdk 可写入`
-2. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)
-3. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Magisk Delta`设置打开`Zygisk`
-4. 安装`JsHook` [下载地址](https://jshook.org/)
-5. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器
-6. `JsHook` -> 仓库 -> 下载脚本
-7. `JsHook` -> 应用 -> `龍脈R` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
-8. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
+~~1. 先装好游戏能进入了，模拟器开好`ROOT`，设置`System.vmdk 可写入`~~
+~~2. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)~~
+~~3. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Magisk Delta`设置打开`Zygisk`~~
+~~4. 安装`JsHook` [下载地址](https://jshook.org/)~~
+~~5. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器~~
+~~6. `JsHook` -> 仓库 -> 下载脚本~~
+~~7. `JsHook` -> 应用 -> `龍脈R` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本~~
+~~8. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本~~
 
 ## 免root相关（实机）
 ~~### 黑盒方法（最高安卓12）：~~
