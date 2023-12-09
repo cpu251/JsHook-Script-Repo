@@ -7,7 +7,7 @@
 # 作者
 @KUMA
 
-# 龍脈•另一種姿態R Mod
+# 龍脈•另一種姿態R PC版 Mod
 * 修改战斗相关功能
 
 ## 基础功能
@@ -20,7 +20,8 @@
 
 ## 使用方法
 * 将`com.Habbit.AnaDos.exe`和`com.Habbit.AnaDos.js`放入龍脈的安装文件夹内，和`anados.exe`同目录
-* 运行`com.Habbit.AnaDos.exe`即可，后续如有更新，只需更新`com.Habbit.AnaDos.js`
+* 只需运行`com.Habbit.AnaDos.exe`即可，会自动打开游戏
+* 后续如有更新，只需更新`com.Habbit.AnaDos.js`
 * 偶尔开启时会有闪退很正常，多运行几次就行了
 * 想要桌面快捷方式，可以自己右键exe创建快捷方式再复制到桌面
 
