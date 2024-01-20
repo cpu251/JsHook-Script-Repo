@@ -37,6 +37,9 @@ function main() {
             let scriptType = scriptTypeMatch && scriptTypeMatch[1]; // 如果找到了匹配项，则获取第一项（分组捕获的内容）。
             let author = authorMatch && authorMatch[1]; // 如果找到了匹配项，则获取第一项（分组捕获的内容）。
             let description = descriptionMatch && descriptionMatch[1]; // 如果找到了匹配项，则获取第一项（分组捕获的内容）。
+            if(scriptType === null){
+                break
+            }
             console.log(`名称: ${name} | Version: ${version} | 脚本类型: ${scriptType} | 作者: ${author} | 描述: ${description}`);
             let filepatn = allFiles[i].substring(0, allFiles[i].length - 'README.md'.length);
             // console.log(filepatn);
