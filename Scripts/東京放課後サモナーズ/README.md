@@ -1,7 +1,7 @@
 # 名称
 東京放課後サモナーズ
 # Version
-1.3
+1.4
 # 脚本类型
 frida
 # 描述
@@ -19,8 +19,8 @@ frida
 * 我方锁血、锁CP
 
 ## 可选功能
-* 游戏速度修改，在主界面长按`收件箱`图标1秒切换，在1倍、3倍、5倍之间切换
-* 战斗开场不动直接胜利，在主界面长按`队伍与强化`图标1秒开关
+* 游戏速度修改，长按左下方`转光石` `彩虹碎片` `金币`图标1秒切换，在1倍、3倍、5倍之间切换
+* 战斗开场不动直接胜利，在左下角长按`人物头像`图标1秒开关
 * 进了战斗想开直接胜利可以长按`属性相性表`按钮2秒，然后需要动一下人物
 
 ## 模拟器相关
@@ -134,4 +134,4 @@ sdcard/Android/media/io.virtualapp.sandvxposed64/scopedStorage/jp.co.lifewonders
 6. 运行游戏
 
 ## 预览
-![image](https://i.imgur.com/33Dyzty.jpg)
+![image](https://i.imgur.com/4LBFg7b.jpeg)
