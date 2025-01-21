@@ -89,6 +89,7 @@ frida
 6. 运行游戏
 
 ## 替换CG说明
+* CG文件格式只支持png和jpg，同时存在png和jpg时，仅读取png
 * 首先确认脚本能正常运行，打开`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files`目录，放入CG文件
 * 默认CG路径示例`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files/CG/bg__charlottestill01_mosaic_001.jpg`
 * 如想CG放其他目录，在`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files`创建`path.txt`文件，文件内容就是目录地址，最后不要带斜杠，尽量使用纯英文数字的目录，如`/sdcard/longmai`，CG路径示例`/sdcard/longmai/CG/bg__charlottestill01_mosaic_001.jpg`
