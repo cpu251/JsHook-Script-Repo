@@ -1,7 +1,7 @@
 # 名称
 龍脈•另一種姿態R
 # Version
-1.9
+2.0
 # 脚本类型
 frida
 # 描述
@@ -14,6 +14,7 @@ frida
 * 当前文档以JsHook 1.1.6版本为例
 
 ## 基础功能
+* 替换CG功能
 * 战斗必定3星，输了会变成胜利
 * 插画4无需道具解锁（不用担心错过活动了）
 * 画廊全解锁（立绘和点阵图）
@@ -86,6 +87,13 @@ frida
 4. `JsHook`回首页 -> 仓库 -> 下载脚本
 5. `JsHook`回首页 -> 应用 -> 龍脈R -> 启动Hook服务 ~~-> 启动配置（脚本配置） -> 延时设置100~~ -> 选择注入框架`FridaMod` -> 启动下载的脚本
 6. 运行游戏
+
+## 替换CG说明
+* 首先确认脚本能正常运行，打开`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files`目录，放入CG文件
+* 默认CG路径示例`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files/CG/bg__charlottestill01_mosaic_001.jpg`
+* 如想CG放其他目录，在`/storage/emulated/0/Android/data/com.Habbit.AnaDos/files`创建`path.txt`文件，文件内容就是目录地址，最后不要带斜杠，尽量使用纯英文数字的目录，如`/sdcard/longmai`，CG路径示例`/sdcard/longmai/CG/bg__charlottestill01_mosaic_001.jpg`
+* 放不是默认路径的，请确保游戏能读到此路径的数据
+
 
 ## 预览
 ![image](https://i.imgur.com/yc49Hcz.jpg)
