@@ -1,7 +1,7 @@
 # 名称
 龍脈•另一種姿態R PC版
 # Version
-2.1
+2.2
 # 描述
 修改战斗相关功能
 # 作者
@@ -24,15 +24,16 @@
 ## 使用方法
 * 将`com.Habbit.AnaDos.exe`和`com.Habbit.AnaDos.js`放入龍脈的安装文件夹内，和`anados.exe`同目录
 * 只需运行`com.Habbit.AnaDos.exe`即可，会自动打开游戏
-* 后续脚本如有更新，只需更新`com.Habbit.AnaDos.js`
+* 后续脚本如有更新，只需更新`com.Habbit.AnaDos.js` (2025年11月8日更新了exe)
 * 偶尔开启时会有闪退很正常，多运行几次就行了
 * 想要桌面快捷方式，可以自己右键exe创建快捷方式再复制到桌面
 
 ## 替换CG说明
+* 注意，2025年11月8日的更新后，目录的地址变化了
 * CG文件格式只支持png和jpg，同时存在png和jpg时，仅读取png
-* 首先确认脚本能正常运行，打开`%USERPROFILE%\AppData\LocalLow\Habbit\AnaDosR`目录，放入CG文件
-* 默认CG路径示例`C:\Users\[你的用户名]\AppData\LocalLow\Habbit\AnaDosR\CG\bg__charlottestill01_mosaic_001.jpg`
-* 如想CG放其他目录，在`%USERPROFILE%\AppData\LocalLow\Habbit\AnaDosR`创建`path.txt`文件，文件内容就是目录地址，最后不要带斜杠，尽量使用纯英文数字的目录，如`D:\longmai`，CG路径示例`D:\longmai\CG\bg__charlottestill01_mosaic_001.jpg`
+* 首先确认脚本能正常运行，打开龍脈的安装文件夹，和`anados.exe`同目录，如`G:\AnaDos`目录，放入CG文件
+* 默认CG路径示例`G:\AnaDos\CG\bg__charlottestill01_mosaic_001.jpg`
+* 如想CG放其他目录，在`G:\AnaDos`创建`path.txt`文件，文件内容就是目录地址，最后不要带斜杠，尽量使用纯英文数字的目录，如`D:\longmai`，CG路径示例`D:\longmai\CG\bg__charlottestill01_mosaic_001.jpg`
 
 ## 预览
 ![image](https://i.imgur.com/yc49Hcz.jpg)

@@ -20,6 +20,6 @@ https://raw.githubusercontent.com/cpu251/JsHook-Script-Repo/main/Store-new.json
 
 CDN解析地址(一般情况下国内正常访问):
 
-https://cdn.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@main/Store-new-cdn.json
+https://gcore.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@main/Store-new-cdn.json
 
-[添加仓库](jshook://store?url=https://cdn.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@main/Store-new-cdn.json)
+[添加仓库](jshook://store?url=https://gcore.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@main/Store-new-cdn.json)

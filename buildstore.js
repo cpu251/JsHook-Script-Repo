@@ -62,14 +62,14 @@ function main() {
             stores.push(store);
             let store_cdn = {
                 "author": author,
-                "markdown": "https://cdn.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@" + branch + "/Scripts/" + encodeURI(pathName) + "/README.md",
+                "markdown": "https://gcore.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@" + branch + "/Scripts/" + encodeURI(pathName) + "/README.md",
                 "ctime": mtime,
                 "source": "https://github.com/cpu251/JsHook-Script-Repo/tree/" + branch + "/Scripts/" + encodeURI(pathName),
                 "id": name,
                 "title": name,
                 "type": scriptType,
                 "version": version,
-                "url": "https://cdn.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@" + branch + "/Scripts/" + encodeURI(pathName) + "/" + scriptType + ".js",
+                "url": "https://gcore.jsdelivr.net/gh/cpu251/JsHook-Script-Repo@" + branch + "/Scripts/" + encodeURI(pathName) + "/" + scriptType + ".js",
                 "desc": description,
                 "down_count": 1069
             };
