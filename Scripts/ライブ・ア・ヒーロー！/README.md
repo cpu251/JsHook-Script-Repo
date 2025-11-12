@@ -1,7 +1,7 @@
 # 名称
 ライブ・ア・ヒーロー！
 # Version
-1.6
+1.7
 # 脚本类型
 frida
 # 描述
@@ -13,7 +13,7 @@ frida
 * 修改战斗相关功能
 * rhino不能设置延迟，frida如果没有显示`注入完成`，可以设置1000毫秒这样的延迟
 * 模拟器使用rhino，实机rhino和frida都行
-* 当前文档以JsHook 1.1.6版本为例
+* 当前文档以JsHook 1.3.0版本为例
 
 ## 基础功能
 * 我方锁血、技能消耗全为0
@@ -24,16 +24,16 @@ frida
 * 进了战斗想开直接胜利可以连点4次`紫色沙漏`图标
 
 ## 模拟器相关
-* 拿`雷电9`举例，其他模拟器自己尝试
-1. 先装好游戏能进入了，建议直接把手机的`sdcard/Android/data/jp.co.lifewonders.liveahero`整个打包，模拟器解压成一样路径，`userkey`也在里面了
-2. 模拟器开好`ROOT`，设置`System.vmdk 可写入`
-3. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)
-4. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Magisk Delta`设置打开`Zygisk`
-5. 安装`JsHook` [下载地址](https://jshook.org/)
-6. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器
-7. `JsHook` -> 仓库 -> 下载脚本
-8. `JsHook` -> 应用 -> `LiveAHero` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本
-9. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本
+~~* 拿`雷电9`举例，其他模拟器自己尝试~~
+~~1. 先装好游戏能进入了，建议直接把手机的`sdcard/Android/data/jp.co.lifewonders.liveahero`整个打包，模拟器解压成一样路径，`userkey`也在里面了~~
+~~2. 模拟器开好`ROOT`，设置`System.vmdk 可写入`~~
+~~3. 装`Magisk Delta`的`Canary`版 [下载地址](https://huskydg.github.io/magisk-files/)~~
+~~4. 进入`Magisk Delta` -> 给`ROOT权限` -> 安装`Magisk` -> 方式选择`安装到系统分区` -> 重启模拟器 -> `Magisk Delta`设置打开`Zygisk`~~
+~~5. 安装`JsHook` [下载地址](https://jshook.org/)~~
+~~6. 安装`Magisk模块` -> 选择下载`LsposedMod-v1.1.3-1103-zygisk-release.zip` -> 到`Magisk Delta`的`模块`里`从本地安装` -> 选择安装下载的文件，重启模拟器~~
+~~7. `JsHook` -> 仓库 -> 下载脚本~~
+~~8. `JsHook` -> 应用 -> `LiveAHero` -> 启动Hook服务 -> 启动配置（脚本配置） -> 启动下载的脚本~~
+~~9. 运行游戏，没有显示任何内容的话，自己随便编个js`global.toast('...')`看能不能显示，能显示再切回之前的脚本~~
 
 ## 免root相关（实机）
 ~~### 黑盒方法（最高安卓12）：~~
@@ -108,10 +108,10 @@ sdcard/Android/media/io.virtualapp.sandvxposed64/scopedStorage/jp.co.lifewonders
 
 ## root相关（实机）
 1. 安装`JsHook` [下载地址](https://jshook.org/)
-2. `LSPosed`之类的配置好`JsHook`能在`系统框架`和`LiveAHero`上运行
+2. `JsHook`使用root权限激活，确定已经激活，安装过老版本的`JsHook`更新`JsHook`前记得先清理各种东西，再更新`JsHook`，如KSU内的模块，以防变砖
 3. 打开`JsHook` -> 框架管理 -> 安装`FridaMod`
 4. `JsHook`回首页 -> 仓库 -> 下载脚本
-5. `JsHook`回首页 -> 应用 -> 龍脈R -> 启动Hook服务 -> 启动配置（脚本配置） -> 延时设置100 -> 选择注入框架`FridaMod` -> 启动下载的脚本
+5. `JsHook`回首页 -> 应用 -> 龍脈R -> 启动Hook服务 -> 选择注入框架`FridaMod` -> 启动下载的脚本
 6. 运行游戏
 
 ## 预览
